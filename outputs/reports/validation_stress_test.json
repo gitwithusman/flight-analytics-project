@@ -1,0 +1,87 @@
+{
+  "note": "synthetic corruption of copies of real archived records; test only",
+  "submitted": 16,
+  "accepted": 5,
+  "rejected": 11,
+  "defects_detected": 11,
+  "defects_injected": 11,
+  "cases": [
+    {
+      "injected_defect": "unknown flight_status",
+      "rejected_fields": [
+        "flight_status"
+      ],
+      "reason": "flight_status: unrecognised flight status 'exploded'"
+    },
+    {
+      "injected_defect": "flight_date not ISO",
+      "rejected_fields": [
+        "flight_date"
+      ],
+      "reason": "flight_date: flight_date '09/10/2026' is not ISO formatted"
+    },
+    {
+      "injected_defect": "negative departure delay",
+      "rejected_fields": [
+        "departure.delay"
+      ],
+      "reason": "departure.delay: Input should be greater than or equal to 0"
+    },
+    {
+      "injected_defect": "implausible delay (> 48 h)",
+      "rejected_fields": [
+        "departure.delay"
+      ],
+      "reason": "departure.delay: Input should be less than or equal to 2880"
+    },
+    {
+      "injected_defect": "airport IATA wrong length",
+      "rejected_fields": [
+        "departure.iata"
+      ],
+      "reason": "departure.iata: airport IATA code 'ABCDE' must be 3 letters/digits"
+    },
+    {
+      "injected_defect": "airline IATA wrong length",
+      "rejected_fields": [
+        "airline.iata"
+      ],
+      "reason": "airline.iata: airline IATA code 'XYZ9' must be 2 letters/digits"
+    },
+    {
+      "injected_defect": "timestamp not ISO-8601",
+      "rejected_fields": [
+        "departure.scheduled"
+      ],
+      "reason": "departure.scheduled: timestamp 'yesterday' is not ISO-8601"
+    },
+    {
+      "injected_defect": "live latitude out of range",
+      "rejected_fields": [
+        "live.latitude"
+      ],
+      "reason": "live.latitude: Input should be less than or equal to 90"
+    },
+    {
+      "injected_defect": "no flight identifier",
+      "rejected_fields": [
+        "record"
+      ],
+      "reason": "record: flight has no IATA code, ICAO code or number - cannot be identified"
+    },
+    {
+      "injected_defect": "no airport codes",
+      "rejected_fields": [
+        "record"
+      ],
+      "reason": "record: neither departure nor arrival airport code is present"
+    },
+    {
+      "injected_defect": "arrival before departure",
+      "rejected_fields": [
+        "record"
+      ],
+      "reason": "record: scheduled arrival is earlier than scheduled departure (even allowing for any timezone difference)"
+    }
+  ]
+}

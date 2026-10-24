@@ -1,0 +1,4 @@
+stage,record_index,identifier,failed_fields,reasons
+extract,10,row 10,record,"flight has no IATA code, ICAO code or number - cannot be identified"
+extract,11,row 11,record,"flight has no IATA code, ICAO code or number - cannot be identified"
+extract,12,row 12,record,"flight has no IATA code, ICAO code or number - cannot be identified"

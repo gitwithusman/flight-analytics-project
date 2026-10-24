@@ -1,0 +1,12 @@
+flight,dep_airport,dep_timezone,minutes_after_departure_literal,minutes_after_departure_wallclock
+2P2919,MNL,Asia/Manila,-443,37
+2P2959,MNL,Asia/Manila,-441,39
+2P2141,MNL,Asia/Manila,-432,48
+KT164,KUL,Asia/Kuala_Lumpur,-444,36
+JL552,AKJ,Asia/Tokyo,-508,32
+JL562,MMB,Asia/Tokyo,-506,34
+JL584,HKD,Asia/Tokyo,-500,40
+JL492,KCZ,Asia/Tokyo,-497,43
+JL476,TAK,Asia/Tokyo,-503,37
+JL627,HND,Asia/Tokyo,-522,18
+JL279,HND,Asia/Tokyo,-515,25

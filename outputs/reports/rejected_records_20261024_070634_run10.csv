@@ -1,0 +1,4 @@
+stage,record_index,identifier,failed_fields,reasons
+extract,0,MVJ,record,scheduled arrival is earlier than scheduled departure
+extract,44,row 44,record,"flight has no IATA code, ICAO code or number - cannot be identified"
+extract,71,row 71,record,"flight has no IATA code, ICAO code or number - cannot be identified"

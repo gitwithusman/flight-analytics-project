@@ -1,0 +1,39 @@
+# docker compose run --rm tests                       -> run the automated tests
+# docker compose run --rm pipeline --inspect          -> inspect the database
+# docker compose run --rm pipeline --replay-raw       -> re-run ETL on the archived raw responses
+# docker compose --profile gui up gui                 -> desktop GUI through X11 (Linux; see README)
+x-app: &app
+  build: .
+  image: skylens:2.1.1
+  env_file:
+    - path: .env          # optional: containers run without keys (sample-data mode)
+      required: false
+  volumes:
+    - skylens-db:/app/database
+    - skylens-data:/app/data
+    - skylens-outputs:/app/outputs
+
+services:
+  tests:
+    <<: *app
+    command: ["python", "-m", "pytest", "tests", "-q"]
+  pipeline:
+    <<: *app
+    entrypoint: ["python", "main_task/run_pipeline.py"]
+  gui:
+    <<: *app
+    profiles: ["gui"]
+    environment:
+      - QT_QPA_PLATFORM=xcb
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - skylens-db:/app/database
+      - skylens-data:/app/data
+      - skylens-outputs:/app/outputs
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    command: ["python", "main_task/gui_main.py"]
+
+volumes:
+  skylens-db:
+  skylens-data:
+  skylens-outputs:

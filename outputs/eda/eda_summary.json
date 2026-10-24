@@ -1,0 +1,1169 @@
+{
+  "profile": {
+    "rows": 230,
+    "columns": 47,
+    "memory_kb": 348.5,
+    "date_min": "2026-10-09",
+    "date_max": "2026-10-13",
+    "capture_dates": 3,
+    "dtype_counts": {
+      "str": 26,
+      "float64": 9,
+      "datetime64[us, UTC]": 6,
+      "int64": 3,
+      "bool": 2,
+      "datetime64[us]": 1
+    }
+  },
+  "dtypes": [
+    {
+      "column": "id",
+      "dtype": "int64",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 230
+    },
+    {
+      "column": "flight_date",
+      "dtype": "datetime64[us]",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 3
+    },
+    {
+      "column": "flight_status",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 3
+    },
+    {
+      "column": "flight_iata",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 230
+    },
+    {
+      "column": "flight_icao",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 230
+    },
+    {
+      "column": "flight_number",
+      "dtype": "str",
+      "non_null": 229,
+      "missing_pct": 0.4,
+      "unique": 227
+    },
+    {
+      "column": "airline_name",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 101
+    },
+    {
+      "column": "airline_iata",
+      "dtype": "str",
+      "non_null": 227,
+      "missing_pct": 1.3,
+      "unique": 99
+    },
+    {
+      "column": "airline_icao",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "column": "dep_airport",
+      "dtype": "str",
+      "non_null": 227,
+      "missing_pct": 1.3,
+      "unique": 51
+    },
+    {
+      "column": "dep_iata",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 53
+    },
+    {
+      "column": "dep_icao",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 53
+    },
+    {
+      "column": "dep_terminal",
+      "dtype": "str",
+      "non_null": 111,
+      "missing_pct": 51.7,
+      "unique": 6
+    },
+    {
+      "column": "dep_gate",
+      "dtype": "str",
+      "non_null": 116,
+      "missing_pct": 49.6,
+      "unique": 44
+    },
+    {
+      "column": "dep_delay_min",
+      "dtype": "float64",
+      "non_null": 125,
+      "missing_pct": 45.7,
+      "unique": 18
+    },
+    {
+      "column": "dep_scheduled",
+      "dtype": "datetime64[us, UTC]",
+      "non_null": 207,
+      "missing_pct": 10.0,
+      "unique": 54
+    },
+    {
+      "column": "dep_estimated",
+      "dtype": "datetime64[us, UTC]",
+      "non_null": 207,
+      "missing_pct": 10.0,
+      "unique": 54
+    },
+    {
+      "column": "dep_actual",
+      "dtype": "datetime64[us, UTC]",
+      "non_null": 17,
+      "missing_pct": 92.6,
+      "unique": 13
+    },
+    {
+      "column": "dep_timezone",
+      "dtype": "str",
+      "non_null": 207,
+      "missing_pct": 10.0,
+      "unique": 26
+    },
+    {
+      "column": "arr_airport",
+      "dtype": "str",
+      "non_null": 224,
+      "missing_pct": 2.6,
+      "unique": 95
+    },
+    {
+      "column": "arr_iata",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 99
+    },
+    {
+      "column": "arr_icao",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 99
+    },
+    {
+      "column": "arr_terminal",
+      "dtype": "str",
+      "non_null": 119,
+      "missing_pct": 48.3,
+      "unique": 8
+    },
+    {
+      "column": "arr_gate",
+      "dtype": "str",
+      "non_null": 14,
+      "missing_pct": 93.9,
+      "unique": 7
+    },
+    {
+      "column": "arr_baggage",
+      "dtype": "str",
+      "non_null": 47,
+      "missing_pct": 79.6,
+      "unique": 23
+    },
+    {
+      "column": "arr_delay_min",
+      "dtype": "float64",
+      "non_null": 18,
+      "missing_pct": 92.2,
+      "unique": 3
+    },
+    {
+      "column": "arr_scheduled",
+      "dtype": "datetime64[us, UTC]",
+      "non_null": 207,
+      "missing_pct": 10.0,
+      "unique": 79
+    },
+    {
+      "column": "arr_estimated",
+      "dtype": "datetime64[us, UTC]",
+      "non_null": 17,
+      "missing_pct": 92.6,
+      "unique": 12
+    },
+    {
+      "column": "arr_actual",
+      "dtype": "datetime64[us, UTC]",
+      "non_null": 1,
+      "missing_pct": 99.6,
+      "unique": 1
+    },
+    {
+      "column": "arr_timezone",
+      "dtype": "str",
+      "non_null": 207,
+      "missing_pct": 10.0,
+      "unique": 38
+    },
+    {
+      "column": "aircraft_registration",
+      "dtype": "str",
+      "non_null": 13,
+      "missing_pct": 94.3,
+      "unique": 13
+    },
+    {
+      "column": "aircraft_icao24",
+      "dtype": "str",
+      "non_null": 125,
+      "missing_pct": 45.7,
+      "unique": 84
+    },
+    {
+      "column": "is_codeshared",
+      "dtype": "bool",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 2
+    },
+    {
+      "column": "live_latitude",
+      "dtype": "float64",
+      "non_null": 16,
+      "missing_pct": 93.0,
+      "unique": 15
+    },
+    {
+      "column": "live_longitude",
+      "dtype": "float64",
+      "non_null": 16,
+      "missing_pct": 93.0,
+      "unique": 15
+    },
+    {
+      "column": "live_altitude",
+      "dtype": "float64",
+      "non_null": 16,
+      "missing_pct": 93.0,
+      "unique": 14
+    },
+    {
+      "column": "live_speed_kmh",
+      "dtype": "float64",
+      "non_null": 16,
+      "missing_pct": 93.0,
+      "unique": 13
+    },
+    {
+      "column": "live_is_ground",
+      "dtype": "float64",
+      "non_null": 16,
+      "missing_pct": 93.0,
+      "unique": 2
+    },
+    {
+      "column": "route",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 127
+    },
+    {
+      "column": "is_delayed",
+      "dtype": "bool",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 2
+    },
+    {
+      "column": "max_delay_min",
+      "dtype": "float64",
+      "non_null": 125,
+      "missing_pct": 45.7,
+      "unique": 18
+    },
+    {
+      "column": "scheduled_duration_min",
+      "dtype": "float64",
+      "non_null": 187,
+      "missing_pct": 18.7,
+      "unique": 55
+    },
+    {
+      "column": "dep_local_hour",
+      "dtype": "int64",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 17
+    },
+    {
+      "column": "retrieved_at",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 4
+    },
+    {
+      "column": "first_seen_at",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 1
+    },
+    {
+      "column": "updated_at",
+      "dtype": "str",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 1
+    },
+    {
+      "column": "dep_hour_local",
+      "dtype": "int64",
+      "non_null": 230,
+      "missing_pct": 0.0,
+      "unique": 17
+    }
+  ],
+  "missing": [
+    {
+      "column": "arr_actual",
+      "missing": 229,
+      "missing_pct": 99.6
+    },
+    {
+      "column": "aircraft_registration",
+      "missing": 217,
+      "missing_pct": 94.3
+    },
+    {
+      "column": "arr_gate",
+      "missing": 216,
+      "missing_pct": 93.9
+    },
+    {
+      "column": "live_is_ground",
+      "missing": 214,
+      "missing_pct": 93.0
+    },
+    {
+      "column": "live_latitude",
+      "missing": 214,
+      "missing_pct": 93.0
+    },
+    {
+      "column": "live_longitude",
+      "missing": 214,
+      "missing_pct": 93.0
+    },
+    {
+      "column": "live_altitude",
+      "missing": 214,
+      "missing_pct": 93.0
+    },
+    {
+      "column": "live_speed_kmh",
+      "missing": 214,
+      "missing_pct": 93.0
+    },
+    {
+      "column": "dep_actual",
+      "missing": 213,
+      "missing_pct": 92.6
+    },
+    {
+      "column": "arr_estimated",
+      "missing": 213,
+      "missing_pct": 92.6
+    },
+    {
+      "column": "arr_delay_min",
+      "missing": 212,
+      "missing_pct": 92.2
+    },
+    {
+      "column": "arr_baggage",
+      "missing": 183,
+      "missing_pct": 79.6
+    },
+    {
+      "column": "dep_terminal",
+      "missing": 119,
+      "missing_pct": 51.7
+    },
+    {
+      "column": "dep_gate",
+      "missing": 114,
+      "missing_pct": 49.6
+    },
+    {
+      "column": "arr_terminal",
+      "missing": 111,
+      "missing_pct": 48.3
+    },
+    {
+      "column": "aircraft_icao24",
+      "missing": 105,
+      "missing_pct": 45.7
+    },
+    {
+      "column": "max_delay_min",
+      "missing": 105,
+      "missing_pct": 45.7
+    },
+    {
+      "column": "dep_delay_min",
+      "missing": 105,
+      "missing_pct": 45.7
+    },
+    {
+      "column": "scheduled_duration_min",
+      "missing": 43,
+      "missing_pct": 18.7
+    },
+    {
+      "column": "dep_estimated",
+      "missing": 23,
+      "missing_pct": 10.0
+    },
+    {
+      "column": "dep_scheduled",
+      "missing": 23,
+      "missing_pct": 10.0
+    },
+    {
+      "column": "dep_timezone",
+      "missing": 23,
+      "missing_pct": 10.0
+    },
+    {
+      "column": "arr_timezone",
+      "missing": 23,
+      "missing_pct": 10.0
+    },
+    {
+      "column": "arr_scheduled",
+      "missing": 23,
+      "missing_pct": 10.0
+    },
+    {
+      "column": "arr_airport",
+      "missing": 6,
+      "missing_pct": 2.6
+    },
+    {
+      "column": "airline_iata",
+      "missing": 3,
+      "missing_pct": 1.3
+    },
+    {
+      "column": "dep_airport",
+      "missing": 3,
+      "missing_pct": 1.3
+    },
+    {
+      "column": "flight_number",
+      "missing": 1,
+      "missing_pct": 0.4
+    }
+  ],
+  "duplicates": {
+    "exact_duplicate_rows": 0,
+    "natural_key_duplicates": 0,
+    "unique_flight_codes": 230
+  },
+  "constant_columns": [
+    "first_seen_at",
+    "updated_at"
+  ],
+  "delay_coverage": {
+    "flights": 230,
+    "delay_reported": 125,
+    "delay_reported_pct": 54.3,
+    "delayed": 28,
+    "delayed_pct_of_reported": 22.4
+  },
+  "numeric": [
+    {
+      "column": "dep_delay_min",
+      "count": 125.0,
+      "mean": 3.96,
+      "std": 10.94,
+      "min": 0.0,
+      "25%": 0.0,
+      "median": 0.0,
+      "75%": 0.0,
+      "max": 68.0,
+      "skew": 4.19
+    },
+    {
+      "column": "arr_delay_min",
+      "count": 18.0,
+      "mean": 0.72,
+      "std": 2.27,
+      "min": 0.0,
+      "25%": 0.0,
+      "median": 0.0,
+      "75%": 0.0,
+      "max": 9.0,
+      "skew": 3.37
+    },
+    {
+      "column": "max_delay_min",
+      "count": 125.0,
+      "mean": 3.96,
+      "std": 10.94,
+      "min": 0.0,
+      "25%": 0.0,
+      "median": 0.0,
+      "75%": 0.0,
+      "max": 68.0,
+      "skew": 4.19
+    },
+    {
+      "column": "scheduled_duration_min",
+      "count": 187.0,
+      "mean": 180.43,
+      "std": 132.99,
+      "min": 20.0,
+      "25%": 92.5,
+      "median": 135.0,
+      "75%": 235.0,
+      "max": 735.0,
+      "skew": 1.83
+    },
+    {
+      "column": "live_speed_kmh",
+      "count": 16.0,
+      "mean": 637.31,
+      "std": 291.01,
+      "min": 0.0,
+      "25%": 590.11,
+      "median": 783.13,
+      "75%": 823.21,
+      "max": 829.7,
+      "skew": -1.58
+    },
+    {
+      "column": "live_altitude",
+      "count": 16.0,
+      "mean": 7341.4,
+      "std": 4065.19,
+      "min": 0.0,
+      "25%": 5450.2,
+      "median": 8450.58,
+      "75%": 10439.4,
+      "max": 11574.8,
+      "skew": -0.96
+    }
+  ],
+  "categorical": [
+    {
+      "column": "flight_status",
+      "unique": 3,
+      "top_value": "scheduled",
+      "top_count": 184,
+      "top_share_pct": 80.0
+    },
+    {
+      "column": "airline_name",
+      "unique": 101,
+      "top_value": "Japan Airlines",
+      "top_count": 12,
+      "top_share_pct": 5.2
+    },
+    {
+      "column": "dep_iata",
+      "unique": 53,
+      "top_value": "TFU",
+      "top_count": 28,
+      "top_share_pct": 12.2
+    },
+    {
+      "column": "arr_iata",
+      "unique": 99,
+      "top_value": "SAI",
+      "top_count": 16,
+      "top_share_pct": 7.0
+    },
+    {
+      "column": "route",
+      "unique": 127,
+      "top_value": "BKK-SAI",
+      "top_count": 14,
+      "top_share_pct": 6.1
+    },
+    {
+      "column": "dep_timezone",
+      "unique": 26,
+      "top_value": "Asia/Shanghai",
+      "top_count": 48,
+      "top_share_pct": 20.9
+    }
+  ],
+  "trend_by_date": [
+    {
+      "date": "2026-10-09",
+      "flights": 132,
+      "delay_reported": 66,
+      "delayed": 9,
+      "mean_delay_min": 2.45,
+      "delayed_pct_of_reported": 13.6
+    },
+    {
+      "date": "2026-10-10",
+      "flights": 1,
+      "delay_reported": 0,
+      "delayed": 0,
+      "mean_delay_min": NaN,
+      "delayed_pct_of_reported": NaN
+    },
+    {
+      "date": "2026-10-13",
+      "flights": 97,
+      "delay_reported": 59,
+      "delayed": 19,
+      "mean_delay_min": 5.64,
+      "delayed_pct_of_reported": 32.2
+    }
+  ],
+  "hourly": [
+    {
+      "dep_hour_local": 0,
+      "flights": 3,
+      "delay_reported": 1,
+      "delayed": 1,
+      "mean_delay_min": 27.0,
+      "delayed_pct_of_reported": 100.0
+    },
+    {
+      "dep_hour_local": 1,
+      "flights": 1,
+      "delay_reported": 0,
+      "delayed": 0,
+      "mean_delay_min": NaN,
+      "delayed_pct_of_reported": NaN
+    },
+    {
+      "dep_hour_local": 4,
+      "flights": 1,
+      "delay_reported": 0,
+      "delayed": 0,
+      "mean_delay_min": NaN,
+      "delayed_pct_of_reported": NaN
+    },
+    {
+      "dep_hour_local": 6,
+      "flights": 2,
+      "delay_reported": 0,
+      "delayed": 0,
+      "mean_delay_min": NaN,
+      "delayed_pct_of_reported": NaN
+    },
+    {
+      "dep_hour_local": 8,
+      "flights": 14,
+      "delay_reported": 12,
+      "delayed": 8,
+      "mean_delay_min": 7.5,
+      "delayed_pct_of_reported": 66.7
+    },
+    {
+      "dep_hour_local": 9,
+      "flights": 34,
+      "delay_reported": 30,
+      "delayed": 7,
+      "mean_delay_min": 3.37,
+      "delayed_pct_of_reported": 23.3
+    },
+    {
+      "dep_hour_local": 10,
+      "flights": 11,
+      "delay_reported": 4,
+      "delayed": 2,
+      "mean_delay_min": 4.0,
+      "delayed_pct_of_reported": 50.0
+    },
+    {
+      "dep_hour_local": 11,
+      "flights": 13,
+      "delay_reported": 8,
+      "delayed": 2,
+      "mean_delay_min": 9.25,
+      "delayed_pct_of_reported": 25.0
+    },
+    {
+      "dep_hour_local": 12,
+      "flights": 18,
+      "delay_reported": 5,
+      "delayed": 1,
+      "mean_delay_min": 11.0,
+      "delayed_pct_of_reported": 20.0
+    },
+    {
+      "dep_hour_local": 13,
+      "flights": 22,
+      "delay_reported": 21,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "delayed_pct_of_reported": 0.0
+    },
+    {
+      "dep_hour_local": 14,
+      "flights": 12,
+      "delay_reported": 8,
+      "delayed": 5,
+      "mean_delay_min": 7.12,
+      "delayed_pct_of_reported": 62.5
+    },
+    {
+      "dep_hour_local": 15,
+      "flights": 1,
+      "delay_reported": 0,
+      "delayed": 0,
+      "mean_delay_min": NaN,
+      "delayed_pct_of_reported": NaN
+    },
+    {
+      "dep_hour_local": 16,
+      "flights": 6,
+      "delay_reported": 2,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "delayed_pct_of_reported": 0.0
+    },
+    {
+      "dep_hour_local": 17,
+      "flights": 35,
+      "delay_reported": 17,
+      "delayed": 1,
+      "mean_delay_min": 0.59,
+      "delayed_pct_of_reported": 5.9
+    },
+    {
+      "dep_hour_local": 18,
+      "flights": 11,
+      "delay_reported": 0,
+      "delayed": 0,
+      "mean_delay_min": NaN,
+      "delayed_pct_of_reported": NaN
+    },
+    {
+      "dep_hour_local": 19,
+      "flights": 36,
+      "delay_reported": 12,
+      "delayed": 1,
+      "mean_delay_min": 5.42,
+      "delayed_pct_of_reported": 8.3
+    },
+    {
+      "dep_hour_local": 20,
+      "flights": 10,
+      "delay_reported": 5,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "delayed_pct_of_reported": 0.0
+    }
+  ],
+  "correlation_spearman": [
+    {
+      "dep_delay_min": 1.0,
+      "arr_delay_min": 0.55,
+      "scheduled_duration_min": -0.21,
+      "live_speed_kmh": 0.34,
+      "live_altitude": 0.1,
+      "dep_hour_local": -0.32
+    },
+    {
+      "dep_delay_min": 0.55,
+      "arr_delay_min": 1.0,
+      "scheduled_duration_min": 0.21,
+      "live_speed_kmh": -0.04,
+      "live_altitude": -0.1,
+      "dep_hour_local": -0.18
+    },
+    {
+      "dep_delay_min": -0.21,
+      "arr_delay_min": 0.21,
+      "scheduled_duration_min": 1.0,
+      "live_speed_kmh": 0.42,
+      "live_altitude": 0.66,
+      "dep_hour_local": -0.08
+    },
+    {
+      "dep_delay_min": 0.34,
+      "arr_delay_min": -0.04,
+      "scheduled_duration_min": 0.42,
+      "live_speed_kmh": 1.0,
+      "live_altitude": 0.62,
+      "dep_hour_local": 0.3
+    },
+    {
+      "dep_delay_min": 0.1,
+      "arr_delay_min": -0.1,
+      "scheduled_duration_min": 0.66,
+      "live_speed_kmh": 0.62,
+      "live_altitude": 1.0,
+      "dep_hour_local": 0.41
+    },
+    {
+      "dep_delay_min": -0.32,
+      "arr_delay_min": -0.18,
+      "scheduled_duration_min": -0.08,
+      "live_speed_kmh": 0.3,
+      "live_altitude": 0.41,
+      "dep_hour_local": 1.0
+    }
+  ],
+  "codeshare_vs_delay": {
+    "groups": {
+      "operated": {
+        "n": 57,
+        "delayed": 23
+      },
+      "codeshared": {
+        "n": 68,
+        "delayed": 5
+      }
+    },
+    "test": {
+      "p1": 0.4035,
+      "p2": 0.0735,
+      "z": 4.407,
+      "p_value": 0.0
+    }
+  },
+  "delay_by_airline": [
+    {
+      "airline_name": "Japan Airlines",
+      "flights_with_delay_data": 12,
+      "delayed": 8,
+      "mean_delay_min": 9.5,
+      "max_delay_min": 32.0,
+      "delayed_pct": 66.7
+    },
+    {
+      "airline_name": "Philippine Airlines",
+      "flights_with_delay_data": 5,
+      "delayed": 4,
+      "mean_delay_min": 8.8,
+      "max_delay_min": 23.0,
+      "delayed_pct": 80.0
+    },
+    {
+      "airline_name": "IndiGo",
+      "flights_with_delay_data": 4,
+      "delayed": 1,
+      "mean_delay_min": 2.5,
+      "max_delay_min": 10.0,
+      "delayed_pct": 25.0
+    },
+    {
+      "airline_name": "China Eastern Airlines",
+      "flights_with_delay_data": 6,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    },
+    {
+      "airline_name": "Air China",
+      "flights_with_delay_data": 4,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    },
+    {
+      "airline_name": "China Southern Airlines",
+      "flights_with_delay_data": 4,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    },
+    {
+      "airline_name": "Fiji Airways",
+      "flights_with_delay_data": 4,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    }
+  ],
+  "delay_by_dep_airport": [
+    {
+      "dep_iata": "LHW",
+      "flights_with_delay_data": 7,
+      "delayed": 1,
+      "mean_delay_min": 9.29,
+      "max_delay_min": 65.0,
+      "delayed_pct": 14.3
+    },
+    {
+      "dep_iata": "RMO",
+      "flights_with_delay_data": 8,
+      "delayed": 5,
+      "mean_delay_min": 7.12,
+      "max_delay_min": 15.0,
+      "delayed_pct": 62.5
+    },
+    {
+      "dep_iata": "HND",
+      "flights_with_delay_data": 5,
+      "delayed": 2,
+      "mean_delay_min": 5.8,
+      "max_delay_min": 16.0,
+      "delayed_pct": 40.0
+    },
+    {
+      "dep_iata": "CGH",
+      "flights_with_delay_data": 9,
+      "delayed": 2,
+      "mean_delay_min": 3.33,
+      "max_delay_min": 15.0,
+      "delayed_pct": 22.2
+    },
+    {
+      "dep_iata": "KUL",
+      "flights_with_delay_data": 4,
+      "delayed": 1,
+      "mean_delay_min": 2.25,
+      "max_delay_min": 9.0,
+      "delayed_pct": 25.0
+    },
+    {
+      "dep_iata": "MEL",
+      "flights_with_delay_data": 19,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    },
+    {
+      "dep_iata": "BKK",
+      "flights_with_delay_data": 18,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    },
+    {
+      "dep_iata": "DOH",
+      "flights_with_delay_data": 11,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    },
+    {
+      "dep_iata": "TFU",
+      "flights_with_delay_data": 10,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    },
+    {
+      "dep_iata": "HRB",
+      "flights_with_delay_data": 7,
+      "delayed": 0,
+      "mean_delay_min": 0.0,
+      "max_delay_min": 0.0,
+      "delayed_pct": 0.0
+    }
+  ],
+  "status_vs_delay": [
+    {
+      "flight_status": "active",
+      "flights": 45,
+      "delay_reported": 41,
+      "delayed": 16,
+      "mean_delay_min": 4.46
+    },
+    {
+      "flight_status": "landed",
+      "flights": 1,
+      "delay_reported": 1,
+      "delayed": 0,
+      "mean_delay_min": 0.0
+    },
+    {
+      "flight_status": "scheduled",
+      "flights": 184,
+      "delay_reported": 83,
+      "delayed": 12,
+      "mean_delay_min": 3.76
+    }
+  ],
+  "outliers": {
+    "scheduled_duration_min": {
+      "column": "scheduled_duration_min",
+      "positive_only": false,
+      "n": 187,
+      "q1": 92.5,
+      "q3": 235.0,
+      "iqr": 142.5,
+      "lower_fence": -121.25,
+      "upper_fence": 448.75,
+      "outliers": 17,
+      "outlier_pct": 9.1,
+      "median": 135.0,
+      "max": 735.0
+    },
+    "delay_min_positive": {
+      "column": "max_delay_min",
+      "positive_only": true,
+      "n": 28,
+      "q1": 7.75,
+      "q3": 15.25,
+      "iqr": 7.5,
+      "lower_fence": -3.5,
+      "upper_fence": 26.5,
+      "outliers": 5,
+      "outlier_pct": 17.9,
+      "median": 12.0,
+      "max": 68.0
+    },
+    "live_speed_kmh": {
+      "column": "live_speed_kmh",
+      "positive_only": false,
+      "n": 16,
+      "q1": 590.11,
+      "q3": 823.21,
+      "iqr": 233.1,
+      "lower_fence": 240.46,
+      "upper_fence": 1172.86,
+      "outliers": 2,
+      "outlier_pct": 12.5,
+      "median": 783.13,
+      "max": 829.7
+    }
+  },
+  "findings": [
+    "The database holds 230 validated flights across 3 flight dates (2026-10-09 to 2026-10-13); it is a snapshot of live data, not a time series.",
+    "80.0% of flights are 'scheduled'; only 3 distinct status value(s) occur (scheduled, active, landed), so status carries little discriminating power.",
+    "Only 125 of 230 flights (54.3%) report a delay value, so delay statistics describe that subset and not all flights.",
+    "Among flights with delay data, 28 (22.4%) were delayed; the median delay is 0 min but the mean is 4.0 min and the maximum 68 min - the distribution is strongly right-skewed (skew 4.2).",
+    "When a delay occurs it is typically 12 min (median of delayed flights); 4 delay(s) reach 30 min or more.",
+    "Scheduled block time (timezone-corrected) has a median of 135 min and a maximum of 735 min; 17 flights (9.1%) lie above the IQR upper fence of 449 min. All are below the 24-hour validity limit, so they were retained and listed for review.",
+    "Operated flights were delayed more often than codeshared listings (40% of 57 operated vs 7% of 68 codeshared; two-proportion z-test p < 0.001) - a statistically detectable difference. Codeshare rows are marketing listings of a partner's flight and delay values may not be reported for them in the same way, so this is an association in a small sample, not a cause.",
+    "Scheduled departures peak at 19:00 local time (36 flights).",
+    "101 airlines appear; the largest, Japan Airlines, accounts for 5.2% of flights - no single carrier dominates the sample.",
+    "Live tracking data (speed, altitude, position) exists for only 16 flights (7.0%), so those fields support illustration rather than inference."
+  ],
+  "figures": {
+    "01_missing_values.png": "/home/claude/work/visualizations/eda/01_missing_values.png",
+    "02_status_distribution.png": "/home/claude/work/visualizations/eda/02_status_distribution.png",
+    "03_top_airlines.png": "/home/claude/work/visualizations/eda/03_top_airlines.png",
+    "04_top_airports_routes.png": "/home/claude/work/visualizations/eda/04_top_airports_routes.png",
+    "05_duration_distribution.png": "/home/claude/work/visualizations/eda/05_duration_distribution.png",
+    "06_delay_distribution.png": "/home/claude/work/visualizations/eda/06_delay_distribution.png",
+    "07_hourly_profile.png": "/home/claude/work/visualizations/eda/07_hourly_profile.png",
+    "08_flights_per_date.png": "/home/claude/work/visualizations/eda/08_flights_per_date.png",
+    "09_correlation_heatmap.png": "/home/claude/work/visualizations/eda/09_correlation_heatmap.png",
+    "10_codeshare_vs_delay.png": "/home/claude/work/visualizations/eda/10_codeshare_vs_delay.png",
+    "11_delay_by_airline.png": "/home/claude/work/visualizations/eda/11_delay_by_airline.png",
+    "12_outliers_boxplots.png": "/home/claude/work/visualizations/eda/12_outliers_boxplots.png"
+  },
+  "timestamp_evidence": [
+    {
+      "flight": "2P2919",
+      "dep_airport": "MNL",
+      "dep_timezone": "Asia/Manila",
+      "minutes_after_departure_literal": -443,
+      "minutes_after_departure_wallclock": 37
+    },
+    {
+      "flight": "2P2959",
+      "dep_airport": "MNL",
+      "dep_timezone": "Asia/Manila",
+      "minutes_after_departure_literal": -441,
+      "minutes_after_departure_wallclock": 39
+    },
+    {
+      "flight": "2P2141",
+      "dep_airport": "MNL",
+      "dep_timezone": "Asia/Manila",
+      "minutes_after_departure_literal": -432,
+      "minutes_after_departure_wallclock": 48
+    },
+    {
+      "flight": "KT164",
+      "dep_airport": "KUL",
+      "dep_timezone": "Asia/Kuala_Lumpur",
+      "minutes_after_departure_literal": -444,
+      "minutes_after_departure_wallclock": 36
+    },
+    {
+      "flight": "JL552",
+      "dep_airport": "AKJ",
+      "dep_timezone": "Asia/Tokyo",
+      "minutes_after_departure_literal": -508,
+      "minutes_after_departure_wallclock": 32
+    },
+    {
+      "flight": "JL562",
+      "dep_airport": "MMB",
+      "dep_timezone": "Asia/Tokyo",
+      "minutes_after_departure_literal": -506,
+      "minutes_after_departure_wallclock": 34
+    },
+    {
+      "flight": "JL584",
+      "dep_airport": "HKD",
+      "dep_timezone": "Asia/Tokyo",
+      "minutes_after_departure_literal": -500,
+      "minutes_after_departure_wallclock": 40
+    },
+    {
+      "flight": "JL492",
+      "dep_airport": "KCZ",
+      "dep_timezone": "Asia/Tokyo",
+      "minutes_after_departure_literal": -497,
+      "minutes_after_departure_wallclock": 43
+    },
+    {
+      "flight": "JL476",
+      "dep_airport": "TAK",
+      "dep_timezone": "Asia/Tokyo",
+      "minutes_after_departure_literal": -503,
+      "minutes_after_departure_wallclock": 37
+    },
+    {
+      "flight": "JL627",
+      "dep_airport": "HND",
+      "dep_timezone": "Asia/Tokyo",
+      "minutes_after_departure_literal": -522,
+      "minutes_after_departure_wallclock": 18
+    },
+    {
+      "flight": "JL279",
+      "dep_airport": "HND",
+      "dep_timezone": "Asia/Tokyo",
+      "minutes_after_departure_literal": -515,
+      "minutes_after_departure_wallclock": 25
+    }
+  ]
+}
